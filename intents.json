@@ -1,0 +1,73 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day"],
+         "responses": ["Hello, thanks for visiting", "Good to see you again", "Hi there, how can I help?"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye"],
+         "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"]
+        },
+        {"tag": "tasks",
+         "patterns": ["What can you do?", "What are your features?", "What are you abilities", "can you sing", "can you talk" ],
+         "responses": ["I can do whatever you asks me to do", "I can talk and do things for you", "Right now i'm in developing stage as soon i'm developed, I can do everything"]
+        },
+
+	{"tag": "email",
+         "patterns": ["Can you send an email?", "send an email"],
+         "responses": ["Yeah i will do that for you","Sure thing why not?"],
+	 "context_set": "email"
+	},
+	{"tag": "weather",
+         "patterns": ["get me weather updates?", "how's the weather", "weather news", "weather details"],
+         "responses": ["Fetching weather updates ..."],
+	 "context_set": "weather"
+	},
+	{"tag": "google",
+         "patterns": ["googling", "search google", "google it", "google", "search","open google"],
+         "responses": ["looking ..."],
+	 "context_set": "google"
+	},
+	{"tag": "wikipedia",
+         "patterns": ["wikipedia", "wiki", "open wikipedia","open wiki", "search wikipedia"],
+         "responses": ["Searching ..."],
+	 "context_set": "wikipedia"
+	},
+	{"tag": "youtube",
+         "patterns": ["youtube", "open youtube", "search youtube"],
+         "responses": ["Opening youtube..."],
+	 "context_set": "youtube"
+	},
+	{"tag": "news",
+         "patterns": ["get me news updates?", "todays news", "top headlines", "current news", "news headlines"],
+         "responses": ["Getting news ..."],
+	   "context_set": "news"
+	},
+	{"tag": "time",
+   	  "patterns": ["What time is it", "Tell me current time", "Time please"],
+        "responses": [],
+	  "context_set": "time"
+	},
+	{"tag": "calculate",
+   	  "patterns": ["What is 3+3+3+3", "What's 3123123/3123", "Calculate 42093*1321"],
+        "responses": [],
+	  "context_set": "calculate"
+	},
+      {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+      },
+	{"tag": "onoff",
+         "patterns": ["turn on the light", "turn the light on", "light on","on","turn off the light", "turn the light off", "light off","off"],
+         "responses": [],
+         "context_set": "onoff"
+      }
+
+   ]
+}
+

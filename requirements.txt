@@ -1,0 +1,9 @@
+beautifulsoup4==4.11.1
+paho_mqtt==1.6.1
+Pillow==9.1.0
+pyttsx3==2.90
+requests==2.27.1
+snips_nlu==0.20.2
+SpeechRecognition==3.8.1
+wikipedia==1.4.0
+Wikipedia_API==0.5.4

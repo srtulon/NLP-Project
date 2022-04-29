@@ -53,9 +53,13 @@
          "responses": ["Sorry, can't help you with that", "Please give me more info", "Not sure I can do that"],
          "context": [""]
       },
-	{"tag": "onoff",
-         "responses": [],
-         "context_set": "onoff"
+	{"tag": "turnLightOn",
+         "responses": ["Turning the light on"],
+         "context_set": "turnLightOn"
+      },
+	{"tag": "turnLightOff",
+         "responses": ["Turning the light off"],
+         "context_set": "turnLightOff"
       }
 
    ]

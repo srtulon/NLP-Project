@@ -1,0 +1,123 @@
+# turnLightOn intent
+---
+type: intent
+name: turnLightOn
+utterances:
+  - Turn on the light
+  - give me some light please
+  - switch on the light, will you?
+  - Switch the light on please
+
+# turnLightOff intent
+---
+type: intent
+name: turnLightOff
+utterances:
+  - Turn off the light
+  - turn the light out please
+  - switch off the light, will you?
+  - Switch the light off please
+
+# google intent
+---
+type: intent
+name: google
+slots:
+  - name: search
+    entity: search
+utterances:
+  - search google for [search]
+  - google [search]
+  - open google and search for [search]
+
+
+# youtube intent
+---
+type: intent
+name: youtube
+slots:
+  - name: search
+    entity: search
+utterances:
+  - search youtube for [search]
+  - play [search]
+  - open youtube and search for [search]
+  - open youtube and play for [search]
+
+
+# wikipedia intent
+---
+type: intent
+name: wikipedia
+slots:
+  - name: search
+    entity: search
+utterances:
+  - search wikipedia for [search]
+  - open wikipedia and search for [search]
+  - search wiki for [search]
+
+
+# wikipedia intent
+---
+type: intent
+name: calculate
+slots:
+  - name: math
+    entity: math
+utterances:
+  - What is [math]
+  - What's [math]
+  - Calculate [math]
+
+
+# weather intent
+---
+type: intent
+name: weather
+slots:
+  - name: location
+    entity: location
+
+utterances:
+  - give me the weather forecast for [location]
+  - how's the weather in [location]
+  - weather in [location]
+  - What will be the weather in [location]
+
+
+
+# search entity
+---
+type: entity
+name: search
+automatically_extensible: yes
+values:
+  - cat
+  - the batman
+  - attack on titan
+
+# location entity
+---
+type: entity
+name: location
+automatically_extensible: yes
+use_synonyms: true
+values:
+  - ottawa
+  - dhaka
+
+# math entity
+---
+type: entity
+name: math
+automatically_extensible: yes
+values:
+  - 3+3+3
+  - 9*3
+  - 5-3
+  - 5/2
+  - 4%2
+  - 3+3+3+3
+  - 3123123/3123
+  - 42093*1321

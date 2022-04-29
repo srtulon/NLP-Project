@@ -1,7 +1,7 @@
-#include <WiFi.h>
+#include <ESP8266WiFi.h>
 #include <PubSubClient.h>
 
-//TODO: ESP32 MQTT user config
+
 const char* ssid = "BELL839"; // Wifi SSID
 const char* password = "checkmate"; // Wifi Password
 const char* subTopic = "onoff"; 
@@ -11,14 +11,15 @@ const int LED_pin = 2; // LEd pin
 const char* mqtt_server = "192.168.2.13";
 unsigned int mqtt_port = 1883;
 
-WiFiClient askClient;
-PubSubClient client(askClient);
+WiFiClient espClient;
+PubSubClient client(espClient);
 
 void setup() {
   Serial.begin(115200);
   Serial.println("*****************************************************");
   Serial.println("Set LED as output");
   pinMode(LED_pin, OUTPUT); // set led as output
+  digitalWrite(LED_pin, 1);
   
   Serial.print("********** connecting to WIFI : ");
   Serial.println(ssid);
@@ -55,11 +56,11 @@ void callback(char* topic, byte* payload, unsigned int length) {
     Serial.println((char)payload[i]);
   }
   if((char)payload[0]=='1'){ 
-    digitalWrite(LED_pin, 1);
+    digitalWrite(LED_pin, 0);
     Serial.println("LED is ON");
   
   } else{
-    digitalWrite(LED_pin, 0);
+    digitalWrite(LED_pin, 1);
     Serial.println("LED is OFF");
   }
 }

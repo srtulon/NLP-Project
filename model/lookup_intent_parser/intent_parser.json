@@ -1,0 +1,205 @@
+{
+  "config": {
+    "ignore_stop_words": true,
+    "unit_name": "lookup_intent_parser"
+  },
+  "entity_scopes": [
+    {
+      "entity_scope": {
+        "builtin": [],
+        "custom": [
+          "math"
+        ]
+      },
+      "intent_group": [
+        "calculate"
+      ]
+    },
+    {
+      "entity_scope": {
+        "builtin": [],
+        "custom": [
+          "search"
+        ]
+      },
+      "intent_group": [
+        "google",
+        "wikipedia",
+        "youtube"
+      ]
+    },
+    {
+      "entity_scope": {
+        "builtin": [],
+        "custom": []
+      },
+      "intent_group": [
+        "turnLightOff",
+        "turnLightOn"
+      ]
+    },
+    {
+      "entity_scope": {
+        "builtin": [],
+        "custom": [
+          "location"
+        ]
+      },
+      "intent_group": [
+        "weather"
+      ]
+    }
+  ],
+  "intents_names": [
+    "calculate",
+    "google",
+    "turnLightOff",
+    "turnLightOn",
+    "weather",
+    "wikipedia",
+    "youtube"
+  ],
+  "language_code": "en",
+  "map": {
+    "-1763363293": [
+      1,
+      [
+        1
+      ]
+    ],
+    "-1632434135": [
+      6,
+      [
+        1
+      ]
+    ],
+    "-1440786909": [
+      4,
+      [
+        2
+      ]
+    ],
+    "-1265423442": [
+      0,
+      [
+        0
+      ]
+    ],
+    "-1200138222": [
+      3,
+      []
+    ],
+    "-941416219": [
+      0,
+      [
+        0
+      ]
+    ],
+    "-770629608": [
+      3,
+      []
+    ],
+    "-628982102": [
+      3,
+      []
+    ],
+    "-626347870": [
+      5,
+      [
+        1
+      ]
+    ],
+    "-452434065": [
+      6,
+      [
+        1
+      ]
+    ],
+    "-351876373": [
+      4,
+      [
+        2
+      ]
+    ],
+    "-47711225": [
+      0,
+      [
+        0
+      ]
+    ],
+    "-11396525": [
+      6,
+      [
+        1
+      ]
+    ],
+    "-8828881": [
+      3,
+      []
+    ],
+    "453456440": [
+      1,
+      [
+        1
+      ]
+    ],
+    "580362279": [
+      1,
+      [
+        1
+      ]
+    ],
+    "912074270": [
+      4,
+      [
+        2
+      ]
+    ],
+    "1007638266": [
+      2,
+      []
+    ],
+    "1051668703": [
+      6,
+      [
+        1
+      ]
+    ],
+    "1182574624": [
+      4,
+      [
+        2
+      ]
+    ],
+    "1213779067": [
+      2,
+      []
+    ],
+    "1436623293": [
+      5,
+      [
+        1
+      ]
+    ],
+    "1900176160": [
+      2,
+      []
+    ],
+    "1927412132": [
+      2,
+      []
+    ],
+    "1952177753": [
+      5,
+      [
+        1
+      ]
+    ]
+  },
+  "slots_names": [
+    "math",
+    "search",
+    "location"
+  ],
+  "stop_words_whitelist": {}
+}

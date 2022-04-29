@@ -1,0 +1,16 @@
+{
+  "parsers_metadata": [
+    {
+      "entity_identifier": "location",
+      "entity_parser": "parser_1"
+    },
+    {
+      "entity_identifier": "math",
+      "entity_parser": "parser_2"
+    },
+    {
+      "entity_identifier": "search",
+      "entity_parser": "parser_3"
+    }
+  ]
+}

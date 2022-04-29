@@ -1,0 +1,63 @@
+{"responses": [
+        {"tag": "greeting",
+         "responses": ["Hello, thanks for visiting", "Good to see you again", "Hi there, how can I help?"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+        },
+        {"tag": "thanks",
+         "responses": ["Happy to help!", "Any time!", "My pleasure"]
+        },
+        {"tag": "tasks",
+         "responses": ["I can do whatever you asks me to do", "I can talk and do things for you", "Right now i'm in developing stage as soon i'm developed, I can do everything"]
+        },
+
+	{"tag": "email",
+         "responses": ["Yeah i will do that for you","Sure thing why not?"],
+	 "context_set": "email"
+	},
+	{"tag": "weather",
+         "responses": ["Fetching weather updates ..."],
+	 "context_set": "weather"
+	},
+	{"tag": "google",
+         "responses": ["looking ..."],
+	 "context_set": "google"
+	},
+	{"tag": "wikipedia",
+         "responses": ["Searching ..."],
+	 "context_set": "wikipedia"
+	},
+	{"tag": "youtube",
+         "responses": ["Opening youtube..."],
+	 "context_set": "youtube"
+	},
+	{"tag": "news",
+         "responses": ["Getting news ..."],
+	   "context_set": "news"
+	},
+	{"tag": "time",
+        "responses": [],
+	  "context_set": "time"
+	},
+	{"tag": "calculate",
+        "responses": [],
+	  "context_set": "calculate"
+	},
+      {"tag": "noanswer",
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+      },
+	{"tag": "oos",
+         "responses": ["Sorry, can't help you with that", "Please give me more info", "Not sure I can do that"],
+         "context": [""]
+      },
+	{"tag": "onoff",
+         "responses": [],
+         "context_set": "onoff"
+      }
+
+   ]
+}
+

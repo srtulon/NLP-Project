@@ -1,0 +1,368 @@
+{
+  "entities": {
+    "location": {
+      "automatically_extensible": true,
+      "data": [
+        {
+          "synonyms": [],
+          "value": "ottawa"
+        },
+        {
+          "synonyms": [],
+          "value": "dhaka"
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    },
+    "math": {
+      "automatically_extensible": true,
+      "data": [
+        {
+          "synonyms": [],
+          "value": "3+3+3"
+        },
+        {
+          "synonyms": [],
+          "value": "9*3"
+        },
+        {
+          "synonyms": [],
+          "value": "5-3"
+        },
+        {
+          "synonyms": [],
+          "value": "5/2"
+        },
+        {
+          "synonyms": [],
+          "value": "4%2"
+        },
+        {
+          "synonyms": [],
+          "value": "3+3+3+3"
+        },
+        {
+          "synonyms": [],
+          "value": "3123123/3123"
+        },
+        {
+          "synonyms": [],
+          "value": "42093*1321"
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    },
+    "search": {
+      "automatically_extensible": true,
+      "data": [
+        {
+          "synonyms": [],
+          "value": "cat"
+        },
+        {
+          "synonyms": [],
+          "value": "the batman"
+        },
+        {
+          "synonyms": [],
+          "value": "attack on titan"
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    }
+  },
+  "intents": {
+    "calculate": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "What is "
+            },
+            {
+              "entity": "math",
+              "slot_name": "math",
+              "text": "3+3+3"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "What's "
+            },
+            {
+              "entity": "math",
+              "slot_name": "math",
+              "text": "9*3"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Calculate "
+            },
+            {
+              "entity": "math",
+              "slot_name": "math",
+              "text": "5-3"
+            }
+          ]
+        }
+      ]
+    },
+    "google": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "search google for "
+            },
+            {
+              "entity": "search",
+              "slot_name": "search",
+              "text": "cat"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "google "
+            },
+            {
+              "entity": "search",
+              "slot_name": "search",
+              "text": "the batman"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "open google and search for "
+            },
+            {
+              "entity": "search",
+              "slot_name": "search",
+              "text": "attack on titan"
+            }
+          ]
+        }
+      ]
+    },
+    "turnLightOff": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "Turn off the light"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "turn the light out please"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "switch off the light, will you?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Switch the light off please"
+            }
+          ]
+        }
+      ]
+    },
+    "turnLightOn": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "Turn on the light"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "give me some light please"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "switch on the light, will you?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Switch the light on please"
+            }
+          ]
+        }
+      ]
+    },
+    "weather": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "give me the weather forecast for "
+            },
+            {
+              "entity": "location",
+              "slot_name": "location",
+              "text": "ottawa"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "how's the weather in "
+            },
+            {
+              "entity": "location",
+              "slot_name": "location",
+              "text": "dhaka"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "weather in "
+            },
+            {
+              "entity": "location",
+              "slot_name": "location",
+              "text": "ottawa"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "What will be the weather in "
+            },
+            {
+              "entity": "location",
+              "slot_name": "location",
+              "text": "dhaka"
+            }
+          ]
+        }
+      ]
+    },
+    "wikipedia": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "search wikipedia for "
+            },
+            {
+              "entity": "search",
+              "slot_name": "search",
+              "text": "the batman"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "open wikipedia and search for "
+            },
+            {
+              "entity": "search",
+              "slot_name": "search",
+              "text": "attack on titan"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "search wiki for "
+            },
+            {
+              "entity": "search",
+              "slot_name": "search",
+              "text": "cat"
+            }
+          ]
+        }
+      ]
+    },
+    "youtube": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "search youtube for "
+            },
+            {
+              "entity": "search",
+              "slot_name": "search",
+              "text": "cat"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "play "
+            },
+            {
+              "entity": "search",
+              "slot_name": "search",
+              "text": "the batman"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "open youtube and search for "
+            },
+            {
+              "entity": "search",
+              "slot_name": "search",
+              "text": "attack on titan"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "open youtube and play for "
+            },
+            {
+              "entity": "search",
+              "slot_name": "search",
+              "text": "cat"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "language": "en"
+}

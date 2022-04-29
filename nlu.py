@@ -6,7 +6,7 @@ from pathlib import Path
 from snips_nlu import SnipsNLUEngine
 from snips_nlu.default_configs import CONFIG_EN
 
-SAMPLE_DATASET_PATH = Path(__file__).parent / "data.json"
+SAMPLE_DATASET_PATH = Path(__file__).parent / "dataset.json"
 
 with SAMPLE_DATASET_PATH.open(mode= "r",encoding="utf8") as f:
     sample_dataset = json.load(f)
